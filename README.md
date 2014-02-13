@@ -1,6 +1,8 @@
 # go-debug
 
-**debugger** provides an environment based debugger in code
+**debugger** provides an environment based debugger in code.  
+
+Based heavily on visionmedia's [debug](https://github.com/visionmedia/debug).
 
 ## Install
 ```bash
