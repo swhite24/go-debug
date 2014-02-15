@@ -88,7 +88,7 @@ func (l *validDebugger) Log (vals ...interface{}) {
 	l.last = time.Now()
 
 	// Build log
-	vals = append([]interface{}{ l.print(l.key + ":"), base }, append(vals, reset, l.print(strconv.Itoa(int(diff)) + "ms"))...)
+	vals = append([]interface{}{ l.print(l.key), base }, append(vals, reset, l.print(strconv.Itoa(int(diff)) + "ms"))...)
 
 	// Send log
 	fmt.Println(vals...)
