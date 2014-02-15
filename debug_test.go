@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func TestDebug (t *testing.T) {
+func TestValidDebug (t *testing.T) {
 	var d = NewDebugger("hello")
 	var d2 = NewDebugger("world")
 	d.Log("hello", 123)
@@ -19,4 +19,9 @@ func TestDebug (t *testing.T) {
 
 	d2.Log("world2", 345)
 	d.Log("hello3", 123)
+}
+
+func TestInvalidDebug (t *testing.T) {
+	var d = NewDebugger("notset")
+	d.Log("hello")
 }
